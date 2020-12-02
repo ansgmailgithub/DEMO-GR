@@ -1,0 +1,10 @@
+
+<div class="d-flex flex-sm-row flex-md-column" style="max-height: calc(100vh - 38px); overflow: scroll;">
+    <div *ngFor="let location of locations">
+        <button
+        type="button"
+        class="btn btn-primary"
+        (click)="setMapCenter(location)"
+        >{{location.state}}</button>
+    </div>
+</div>

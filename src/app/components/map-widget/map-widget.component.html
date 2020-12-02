@@ -1,0 +1,12 @@
+
+<agm-map
+[latitude]='mapCenter.lat'
+[longitude]='mapCenter.lon'
+[zoom]='zoomLevel'
+>
+  <agm-marker
+    *ngFor="let location of locations"
+    [latitude]="location.lat"
+    [longitude]="location.lon"
+  ></agm-marker>
+</agm-map>
